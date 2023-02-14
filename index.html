@@ -1,8 +1,55 @@
-<html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <!-- title  -->
+        <title>Tinder Home Page</title>
+
+        <meta charset="UTF-8">
+        <!-- making viewport responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- LINK to css file -->
         <link rel="stylesheet" href="index.css">
+
+        <!-- link to font "Poppins" weight: 600,400 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     </head>
     <body>
+        <!-- HEADER SECTION containing the top 3 buttons -->
+        <header>
+            <img src="images/icon-profile.png" alt="profile picture logo">
+            <img src="images/logo.png" alt="Main logo">
+            <img src="images/icon-chat.png" alt="Comment section button">
+        </header>
+
+        <!-- ONLY MAIN DOG IMAGE IS HERE-->
+        <main class="mainImg">
+            <!-- <img src="images/dog-rex.jpg" alt="Main profile in view's profile picture"> -->
+        </main>
+        <!-- MAIN IMG's text & "LIKE", "NOPE" TEXT is HERE -->
+        <div class="overMainImgBadge"> 
+            <img id="like-badge" src="images/badge-like.png" alt="Like badge over picture">
+            <img id="nope-badge" src="images/badge-nope.png" alt="Nope badge over picture">
+        </div>
+        <div class="overMainImgText">
+            <!-- <p>
+                Teddy, 30 <span>How you doin?</span>
+            </p> -->
+        </div>
+
+        <footer>
+
+            <!-- <img src="images/icon-cross.png" alt="Don't like it button">
+            <img src="images/icon-heart.png" alt="Do like it button"> -->
+            <div class="footerImgDiv dontLike">
+                <img src="images/icon-cross.png" data-disliked="dontLike" alt="Don't like it button">
+            </div>
+            <div class="footerImgDiv doLike">
+                <img src="images/icon-heart.png" data-liked="didLike" alt="Do like it button">
+            </div>                    
+        </footer>
         <script src="/index.js" type="module"></script>
     </body>
 </html>
